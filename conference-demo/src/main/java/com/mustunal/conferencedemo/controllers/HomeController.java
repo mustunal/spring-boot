@@ -21,4 +21,10 @@ public class HomeController {
         map.put("app-version",appVersion);
         return map;
     }
+
+    @GetMapping
+    @RequestMapping("/welcome")
+    public String welcome(){
+        return "Welcome to Conference-Demo App!";
+    }
 }
